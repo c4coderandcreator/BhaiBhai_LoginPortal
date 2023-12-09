@@ -4,8 +4,8 @@ This is Dummy Login Portal created for fun purpose. But it is a perfect example 
 # Project Setup
 - clone the repo to your local system using : git clone repo_url
 - cd to the directory BhaiBhai_LoginPortal
-- type command: npm install 
-- type command: node index.js
+- use command: npm install 
+- use command: node index.js
 - and open the url in browser: localhost:3004/
 
 # connect

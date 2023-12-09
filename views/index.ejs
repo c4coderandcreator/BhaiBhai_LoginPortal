@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Bhai-Bhai</title>
+</head>
+<body>
+    
+    <div class="design">
+        <h1 class="bhaibhai">Bhai-Bhai Portal 🧑‍🤝‍🧑</h1>
+    
+    <main class="login-container">
+
+        <h1 class="login-title">Welcome Bhai!</h1>
+
+        <form action="/submit" method="post">
+            <label for="username">Bhai Username daal:</label>
+            <input type="text" name="username" id="username" placeholder="Enter username">
+         <br>
+            <label for="password">Bhai Password daal:</label>
+            <input type="password" name="password" id="password" placeholder="Enter password">
+
+        <br>
+            <div class="checkbox-container">
+                <input type="checkbox" name="remember_me" id="remember_me">
+                <label for="remember_me">Bhai Yaad Rakhna hai Kya ?</label>
+            </div>
+            <button type="submit">Kshu de bhai</button>
+        </form>
+
+        <a href="#">Bhai Bhool Gya Kya?</a>
+
+    </main> 
+    <div class="secondbox">
+        <% if (locals.users) { %>
+            <h1>Bhai username ye bna hai: <%= users%></h1>
+            <h1>Bhai tera password :<%= passes%>.</h1>
+          
+            <% if (passes.length < 10) { %>
+              <h1> Bhai password chota hai 🤏, Thik kar le Bhai !! </h1>
+            <% } else { %>
+              <h1>Bhai Password bilkul tere jaisa hai, ekdum Strong 🦾 </h1>
+            <% } %>
+          <% } else { %>
+            <h1>Bhai Upar Details Daal</h1>
+          <% } %>
+    </div>
+</div>
+</body>
+</html>
